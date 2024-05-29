@@ -12,6 +12,7 @@ from optparse import OptionParser
 
 def create_bates_canvas(page_number, bates_number, tmp_pdf, text):
     c = canvas.Canvas(tmp_pdf, pagesize=letter)
+    # TODO: custom position
     c.drawString(0.5 * inch, 0.5 * inch,
                  f"{text}{bates_number + page_number}")
     c.save()
