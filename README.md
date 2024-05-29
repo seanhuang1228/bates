@@ -2,6 +2,11 @@
 
 A easy bates number generator, which will add Bates number at the bottom-left corner.
 
+## Dependency
+
+- pypdf
+- reportlab
+
 ## Usage
 
 ```
