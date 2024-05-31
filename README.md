@@ -52,3 +52,15 @@ python bates.py -p PRE- example.pdf
 The gerneated pdf will be with the `PRE-1000` on the bottom-left corner.
 
 Default value is an empty string.
+
+### Batch Size
+
+You can set the number of copies each output pdf file should contain with option `-b`, for example:
+
+```
+python bates.py -n 10 -b 3 example.pdf
+```
+
+This will generate three pdf files contain three copies, and one pdf file contains only one copy. In addition, the number in output file name will be the start number in that file, for example, the above command will make `example.pdf_[0|3|6|9].pdf` three files.
+
+Default value is one.
